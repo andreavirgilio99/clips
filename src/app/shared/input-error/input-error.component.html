@@ -1,0 +1,5 @@
+<div *ngIf="control.errors" style="color: rgb(248, 26, 26);">
+    <p *ngFor="let error of getKeys(control.errors)">
+        {{getErrorMessage(error)}}
+    </p>
+</div>
